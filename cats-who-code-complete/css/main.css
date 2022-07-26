@@ -1,0 +1,185 @@
+/* 
+Theme Name: One Month Wordpress;
+Project Name: Cats who Code
+Client: One Month Students 
+Author: Chris Castig | @castig
+*/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/*----------------------------------------------------------------------------- 
+BODY 
+-----------------------------------------------------------------------------*/
+
+
+body {
+	background: url('../images/background.png') repeat-x #d6d6d6; /* add a fallback color of #d6d6d6 */
+	color: #000000;
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 1.7; /* line-height is unit-less */
+	font-size: 12px;
+}
+
+a {
+	color: #ff3300;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Put the image on the <a> and not the <h1> itself so that the link works properly */
+h1 a {
+	background: url('../images/logo.png') no-repeat;
+	width: 216px;
+	height: 213px;
+	margin: auto;
+	display: block;	
+
+	/* image replacment technique */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+h2 {
+	font-size: 20px;
+	margin: 10px 0;
+}
+	h2 a {
+		color: #000000;
+	}
+	h2 a:hover {
+		text-decoration: underline;
+		background: #eee;
+	}
+
+
+/*----------------------------------------------------------------------------- 
+MAIN SECTIONS
+-----------------------------------------------------------------------------*/
+
+/* Center the container */
+#container {
+	width: 940px;
+	margin: auto;	
+}
+.navcontainer {
+	margin: auto;	
+	text-align: center;	
+	background: #ff3300;
+}
+.inner-navcontainer {
+	width: 940px;
+	margin: auto;	
+}
+#header {
+	margin-bottom: 40px;
+}
+
+#main {
+	background: #FFF;
+	float: left;
+	width: 640px;
+	padding: 20px;
+}
+
+	.post {
+		margin-bottom: 50px;
+	}
+
+	.post-meta {
+		border-top: 1px dotted #000;
+		border-bottom: 2px solid #000;
+		width: 600px;
+		display: block;
+		padding: 7px;
+	}
+
+/*---------------------------------------------------------------------------- 
+NAVIGATION   
+-----------------------------------------------------------------------------*/
+
+nav ul {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+	margin: 1em;
+	font-size: 1.3em;
+}
+
+nav ul li a {
+	display: block;
+	padding: 1em;
+	color: #FFF;
+	min-width: 100px;
+	text-align: center;
+}
+
+
+/*----------------------------------------------------------------------------- 
+SIDEBAR  
+-----------------------------------------------------------------------------*/
+
+#sidebar {
+	background: #FFF;
+	float: left;
+	width: 280px;
+	margin-left: 20px;
+	padding: 27px;
+	font-size: 12px;
+}
+	#sidebar .widget {
+		margin: 0 0 18px 0;
+	}
+
+	#sidebar h3 {
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	#sidebar ul {
+		padding: 0;
+		margin: 0;
+	}		
+
+	#sidebar ul li {
+		margin-left: 0;
+		list-style: none;	
+	}
+	#sidebar ul li a {
+		text-decoration: none;
+		color: #000000;	
+	}
+
+/*---------------------------------------------------------------------------- 
+FOOTER   
+-----------------------------------------------------------------------------*/
+
+#footer {
+	padding: 40px;
+	text-align: center;
+}
+
